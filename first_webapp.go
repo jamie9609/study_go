@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func handler(write http.ResponseWriter, request *http.Request)  {
+func handler(writer http.ResponseWriter, request *http.Request)  {
 	fmt.Fprintf(writer, "hello world, %s!", request.URL.Path[1:])
 }
 
